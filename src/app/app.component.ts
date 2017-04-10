@@ -25,9 +25,7 @@ export class SignupComponent {
     const myHeaders = new Headers({
       'Content-Type': 'application/json'
     });
-    this.http.post('http://35.157.219.6:3000/api/login', data, {
-        headers: myHeaders
-      })
+    this.http.get('https://api.github.com/users/t-jedsada')
       .subscribe(
         response => {
           console.log(response);
