@@ -14,15 +14,15 @@ import {
   styleUrls: ['./app.component.css']
 })
 
-export class Signup {
+export class SignupComponent {
   constructor(public http: Http) {}
 
   signup() {
-    var data = {
-      user: "paradon",
-      pass: "paradon@1"
+    const data = {
+      user: 'paradon',
+      pass: 'paradon@1'
     };
-    var myHeaders = new Headers({
+    const myHeaders = new Headers({
       'Content-Type': 'application/json'
     });
     this.http.post('http://35.157.219.6:3000/api/login', data, {

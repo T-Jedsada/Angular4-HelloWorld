@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { Signup } from './app.component';
+import { SignupComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    Signup
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -15,6 +15,6 @@ import { Signup } from './app.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [Signup]
+  bootstrap: [SignupComponent]
 })
 export class AppModule { }
